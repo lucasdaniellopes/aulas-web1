@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ entry.text|truncatewords:5 }}</title>
+  </head>
+  <body>
+    <h1>{{ entry.text }}</h1>
+    <p>Data de Adição: {{ entry.date_added }}</p>
+    {% if entry.image %}
+    <img src="{{ entry.image.url }}" alt="Imagem da Entrada" />
+    {% endif %}
+  </body>
+</html>
